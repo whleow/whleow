@@ -4,4 +4,4 @@ echo "yes "
 number=$(( ( RANDOM % 10000 )  + 1 ))
 fullstring='{"issue":{"notes": "yes i have added from api '$number'"}}'
 echo $fullstring
-curl -X POST -H "Content-Type: application/json" -d '{"asd": "asd"}' "http://175.139.26.5:58509/issues/5.json"
+#curl -X POST -H "Content-Type: application/json" -d '{"asd": "asd"}' "http://175.139.26.5:58509/issues/5.json"
