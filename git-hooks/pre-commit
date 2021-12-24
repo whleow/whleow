@@ -1,6 +1,0 @@
-#!/bin/sh
-echo "yes"
-
-number=$(( ( RANDOM % 10000 )  + 1 ))
-
-#curl -X PUT -H "Content-Type: application/json" -d '{"issue":{"notes": "yes i have added from api "}}' "http://192.168.0.103:4000/issues/5.json"
