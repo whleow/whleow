@@ -1,0 +1,22 @@
+{
+  "name": "git-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whleow/whleow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whleow/whleow/issues"
+  },
+  "homepage": "https://github.com/whleow/whleow#readme",
+  "dependencies": {
+    "node-bacnet": "file:adfvision3-bacnet"
+  }
+}
