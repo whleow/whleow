@@ -1,0 +1,3 @@
+[submodule "T1FirstEndpoint"]
+	path = T1FirstEndpoint
+	url = git@github.com:ADFTech/T1FirstEndpoint.git
