@@ -1,6 +1,0 @@
-[submodule "T1FirstEndpoint"]
-	path = T1FirstEndpoint
-	url = git@github.com:ADFTech/T1FirstEndpoint.git
-[submodule "adfvision3-bacnet"]
-	path = adfvision3-bacnet
-	url = git@github.com:ADFTech/adfvision3-bacnet.git

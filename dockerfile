@@ -1,20 +1,12 @@
-FROM node:16
+### build stage ###
+FROM ubuntu:18.04 as builder
+RUN apt update
+RUN apt install -y make yasm as31 nasm binutils 
+COPY asmttpd/* .
+RUN make release
 
-# BP - Node user folder
-WORKDIR /home/node/app
-
-COPY ./package*.json ./
-
-# BP - Production install
-RUN npm ci --only=production
-
-COPY ./ .
-
-#COPY ./.env .
-
-EXPOSE 3000
-
-# BP - Run default as the node user, not root
-USER node
-
-CMD [ "node", "test.js" ]
+### run stage ###
+FROM scratch
+COPY --from=builder /asmttpd /asmttpd
+COPY web_root/* /web_root/
+CMD ["/asmttpd", "/web_root", "8080"] 
